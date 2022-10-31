@@ -1,14 +1,15 @@
 package com.qa.Generics;
 
-public class Printer {
+public class Printer <T> {
 
-	String thingToPrint;
+	T thingToPrint;
 	
-	public Printer(String thingToPrint) {
+	public Printer(T thingToPrint) {
 		this.thingToPrint = thingToPrint;
 	}
 	
 	public void print() {
-		System.out.println("Thing To Print: " + thingToPrint);
+		System.out.println("T To Print: " + thingToPrint);
+		System.out.println("");
 	}
 }
